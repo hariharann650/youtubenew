@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="shorts.css">
+    <title>Youtube.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:wght@400;500&display=swap');
+      </style>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&family=Roboto:wght@400;500;&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <img class="hamburger-menu js-menu" src="channel-menu/hamburger-menu.svg">
+            <img class="youtube-logo" src="channel-menu/youtube-logo.svg">
+        </div>
+        <div class="middle-section">
+            <input class="search" type="text" placeholder="Search">
+            <button class="search-icon-button">
+                <img  class="search-icon" src="channel-menu/search.svg">
+                <div class="tooltip">Search</div>
+            </button>
+            <button  class="voice-button">
+                <img class="voice-icon" src="channel-menu/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img class="upload-icon"src="channel-menu/upload.svg">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="notification-icon-container">
+                <img class="notification-icon" src="channel-menu/notifications.svg">
+                <div class="tooltip">Notifications</div>
+                <button class="notification-button">9+</button>
+            </div>
+            <img class="current-user-picture" src="channel-logo/my-channel.jpg">
+        </div>
+    </div><br>
+    <div class="recommand">
+        <button>All</button>
+        <button>Tamil Cinema</button>
+        <button>Mixes</button>
+        <button>Music</button>
+        <button>News</button>
+        <button>Electric vehicles</button>
+        <button>Gaming</button>
+        <button>Trailers</button>
+        <button>Gadgets</button>
+        <button>Computer Programming</button>
+        <!----
+        <button>Harry Potter</button>
+        <button>Stocks</button>
+        <button>Live</button>
+        <button>Sales</button>
+        <button>Motorcycles</button>
+        <button>Dogs</button>
+        <button>Recently Upload</button>
+        <button>Watched</button>
+        <button>New to you</button>
+        <button>Ben 10</button>
+        <button>Cars to Buy</button> 
+        -->
+    </div><br>
+    <div class="sidebar js-sidebar">
+        <div title="Home"class="sidebar-link">
+            <img src="left-icons/home.svg">
+            <div >Home</div>
+        </div>
+        <div title="Shorts"class="sidebar-link">
+         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+            <div> <a href="#shorts"></a>Shorts</div>
+        </div>
+        <div title="Subscriptions"class="sidebar-link">
+            <img src="left-icons/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div title="You" class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width:24px; height:24px;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+            <div>You</div>
+        </div>
+        </div>
+    <div class="video-gird">
+  </div>
+
+  <div class="main-shorts js-main-shorts">
+  <div class="shorts">
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" style="pointer-events: none; display: block; width: 30px; height: 30px;">
+            <g>
+              <path d="M17.77,10.32l-1.2-.5L18,9.06a3.74,3.74,0,0,0-3.5-6.62L6,6.94a3.74,3.74,0,0,0,.23,6.74l1.2.49L6,14.93a3.75,3.75,0,0,0,3.5,6.63l8.5-4.5a3.74,3.74,0,0,0-.23-6.74Z" fill="red"></path>
+              <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
+            </g>
+          </svg>
+          <p class="shorts-text">
+            Shorts
+          </div>
+    </p>
+    <div class="last js-last">
+        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="10" viewBox="0 0 24 24" width="10" focusable="false" style="pointer-events:none;  width:24.9px; height:24.9px;"><path d="m12.71 12 8.15 8.15-.71.71L12 12.71l-8.15 8.15-.71-.71L11.29 12 3.15 3.85l.71-.71L12 11.29l8.15-8.15.71.71L12.71 12z"></path></svg>
+    </div>
+  </div>
+  <div class="shorts-video-div js-shorts-video-div">
+
+</div><br>
+<!-- <div class="shorts-video-div js-shorts-video-div" id="nothing">
+
+</div> -->
+
+<div class="show-more">
+    <button>Show More  <svg xmlns="http://www.w3.org/2000/svg" height="19" viewBox="0 4 24 12" width="19" focusable="false" style="pointer-events: none; width:27; height:15;"><path d="m18 9.28-6.35 6.35-6.37-6.35.72-.71 5.64 5.65 5.65-5.65z"></path></svg></button>
+</div>
+  </div>
+  <div class="video-gird video-gird1" >
+  </div>
+  <script  src="content.js"></script>
+  <script src="shorts.js"></script>
+  <script  src="youtubescript.js"></script>
+</body>
+</html>

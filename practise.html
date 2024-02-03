@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .generated-div {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="content"></div>
+
+  <script>
+    // Function to create a new div element
+    function createDiv() {
+      const div = document.createElement('div');
+      div.className = 'generated-div';
+      return div;
+    }
+
+    // Function to check if the user has scrolled to the bottom of the page
+    function isScrolledToBottom() {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY || window.pageYOffset;
+
+      return (windowHeight + scrollTop) >= documentHeight;
+    }
+
+    // Function to handle the scroll event
+    function handleScroll() {
+      if (isScrolledToBottom()) {
+        // Create a new div and append it to the content container
+        const contentContainer = document.getElementById('content');
+        const newDiv = createDiv();
+        contentContainer.appendChild(newDiv);
+      }
+    }
+
+    // Attach the handleScroll function to the scroll event
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial div to start the scrolling
+    handleScroll();
+  </script>
+
+</body>
+</html>
